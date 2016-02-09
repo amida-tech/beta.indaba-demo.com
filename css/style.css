@@ -148,7 +148,7 @@ z-index: 0;
 	/*max-width: 1102px;*/
 	height:61.8vh;
 	width: 100vw;
-	padding-top: 80px;
+	padding-top: 13vh;
 	color: #fff;
 	text-align: center;
 	-webkit-filter: blur(0px);
@@ -186,7 +186,7 @@ position: relative;
 	position:relative;
 /*	margin-top: 61.8vh;*/
 	height: 38.2vh;
-	width:100%;
+	width: 80%;
 	max-width: 1440px;
 	margin: 61.8vh auto 0 auto;
 	color: #444444;
