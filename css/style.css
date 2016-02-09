@@ -53,11 +53,10 @@ html {
 	background-color: #1C1A2A;
 }
 h1 {
-	color: inherit;
 font-family: ManifoldCF-Bold;
-font-size: 50px;
-line-height: 60px;
-text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+font-size: 26px;
+color: #159045;
+line-height: 31px;
 }
 p{
 font-family: OpenSans;
@@ -110,7 +109,8 @@ nav li:last-of-type {
 	overflow:hidden;
 	color: #fff;
 	z-index: 1;
-	position: absolute
+	position: absolute;
+	text-align: center;
 }
 #shade {
 	position: absolute;
@@ -139,7 +139,7 @@ min-width: 100vw;
 position: absolute;
 top:0;
 z-index: 0;
--webkit-filter: blur(6px);
+/*-webkit-filter: blur(3px);*/
 }
 #pre {
 	margin-top: 86px;
@@ -153,6 +153,13 @@ z-index: 0;
 	text-align: center;
 	-webkit-filter: blur(0px);
 }
+#pre h1{ 
+		color: inherit;
+		font-size: 50px;
+		line-height: 60px;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
 #pre p {
 font-size: 26px;
 line-height: 36px;
@@ -174,7 +181,34 @@ padding: 16px 12px;
 margin-top: 32px;
 position: relative;
 }
-
+#post{
+	display: inline-block;
+	position:relative;
+/*	margin-top: 61.8vh;*/
+	height: 38.2vh;
+	width:100%;
+	max-width: 1440px;
+	margin: 61.8vh auto 0 auto;
+	color: #444444;
+	background-color: #fff;
+	text-align: center;
+}
+#post h1 {
+	font-size: 36px;
+	color: #159045;
+	line-height: 43px;
+	max-width: 100%;
+	display: block;
+	margin-top: 80px;
+}
+#post p {
+	max-width: 640px;
+	padding: 0 20px;
+	display: inline-block;
+	margin-top: 17px;
+	font-size: 20px;
+	line-height: 27px;
+}
 
 
 
