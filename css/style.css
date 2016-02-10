@@ -221,6 +221,7 @@ position: relative;
 /*	background-color: #fbad35;*/
 	position: absolute;
 	top: 0;
+	color: #fff
 }
 #pageContents {
 	display: block;
@@ -235,27 +236,29 @@ position: relative;
 	background-color: #fff;
 	z-index: 6;
 }
-#pageContents div {
+#pageContents div.withPreview {
 	display: block;
-	clear: both
+	clear: both;
+	min-height: 600px
 }
 #pageContents span {
 	display: inline;
 	margin: 0 20px;
 }
-#pageContents div:first-of-type {
+#pageContents div.withPreview:first-of-type {
 	margin-left: 20px;
 }
-#pageContents div:first-of-type img {
+#pageContents div.withPreview:first-of-type img {
 	float: right;
 	margin-left: 20px;
 }
-#pageContents div:last-of-type {
+#pageContents div.withPreview:last-of-type {
 	margin-left: 20px;
 }
-#pageContents div:last-of-type img {
+#pageContents div.withPreview:last-of-type img {
 	float: left;
 	margin-right: 20px;
+	margin-left: -20px;
 }
 
 
