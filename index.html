@@ -1,152 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8"> 
-<title>Indaba &ndash; &#128021;</title>
-<!-- OpenGraph -->
-<meta name="og:type" content="website" />
-<meta property="og:url" content="http://indaba.io" />
-<meta property="og:locale" content="en_US" >
-<meta name="og:title" content="Indaba - Turn Knowledge Into Data" />
-<meta property="og:site_name" content="Indaba" />
-<meta property="og:description" content="Something about what indaba does." />
-<meta property="og:image" content="" />
-<!-- Twitter -->
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-	<nav>
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.36 70.4"><defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:#7bbc55;}.cls-3{fill:#17a84e;}</style></defs><title>Indaba Logo 012816 -kc1</title><path class="cls-1" d="M74.87,17.22h5.34A0.68,0.68,0,0,1,81,18v34.4a0.68,0.68,0,0,1-.77.77H74.87a0.68,0.68,0,0,1-.77-0.77V18A0.68,0.68,0,0,1,74.87,17.22Z"/><path class="cls-1" d="M112.92,18v34.4a0.68,0.68,0,0,1-.77.77h-6.73a0.94,0.94,0,0,1-.92-0.56L94.43,28.93V52.39a0.68,0.68,0,0,1-.77.77H88.43a0.68,0.68,0,0,1-.77-0.77V18a0.68,0.68,0,0,1,.77-0.77H95.2a0.94,0.94,0,0,1,.92.57l10,23.62V18a0.68,0.68,0,0,1,.77-0.77h5.24A0.68,0.68,0,0,1,112.92,18Z"/><path class="cls-1" d="M144.09,27.23V43c0,6.06-3.23,10.12-10.17,10.12H120.37a0.68,0.68,0,0,1-.77-0.77V18a0.68,0.68,0,0,1,.77-0.77h13.56C140.85,17.22,144.09,21.23,144.09,27.23Zm-6.78,0c0-3.13-1-4-3.39-4h-7.55V47.1h7.55c2.36,0,3.39-.82,3.39-4.06V27.23Z"/><path class="cls-1" d="M172.08,53.16h-5.49a0.89,0.89,0,0,1-.92-0.82L164.17,46h-8.68L154,52.34a0.89,0.89,0,0,1-.92.82h-5.44a0.57,0.57,0,0,1-.62-0.82l9.7-34.3a1,1,0,0,1,1-.82H162a1,1,0,0,1,1,.82l9.7,34.3C172.79,52.91,172.59,53.16,172.08,53.16Zm-9.34-13L159.8,28.05l-2.88,12.07h5.8Z"/><path class="cls-1" d="M202.48,40.69v2.77c0,6.37-3.39,9.7-10.73,9.7h-13.4a0.68,0.68,0,0,1-.77-0.77V18a0.68,0.68,0,0,1,.77-0.77h13.2c6.62,0,9.65,2.82,9.65,10A9.42,9.42,0,0,1,199,33.65,8.42,8.42,0,0,1,202.48,40.69ZM191.54,23.28h-7.19v8.16h7.19c2.05,0,2.88-.51,2.88-4.26C194.41,23.59,193.59,23.28,191.54,23.28Zm4.16,17.41c0-2.93-1.18-3.75-4-3.75h-7.39V47.1h7.39c2.77,0,4-.77,4-3.65V40.69Z"/><path class="cls-1" d="M230.72,53.16h-5.49a0.89,0.89,0,0,1-.92-0.82L222.81,46h-8.68l-1.54,6.32a0.89,0.89,0,0,1-.92.82h-5.44a0.57,0.57,0,0,1-.62-0.82l9.7-34.3a1,1,0,0,1,1-.82h4.36a1,1,0,0,1,1,.82l9.71,34.3C231.44,52.91,231.23,53.16,230.72,53.16Zm-9.35-13-2.93-12.07-2.87,12.07h5.8Z"/><path class="cls-2" d="M46.07,32.11q-0.15.48-.26,1v0c-0.08.32-.16,0.63-0.22,1-0.25,1.12-.46,2.24-0.6,3.36,0,0.34-.1.68-0.12,1,0,0.06,0,.11,0,0.17,0,0.29,0,.57-0.06.85a35.61,35.61,0,0,1-5-1.73c0.16-.26.31-0.53,0.45-0.8,0,0,0-.05,0-0.08,0.17-.29.32-0.59,0.47-0.89a33.85,33.85,0,0,0,1.39-3.11c0.13-.31.25-0.62,0.36-0.93a0.14,0.14,0,0,1,0-.06c0.11-.29.21-0.59,0.29-0.89A28.41,28.41,0,0,0,46.07,32.11Z"/><path class="cls-2" d="M67.9,35c0,0.82,0,1.56-.07,2.26a1,1,0,0,1-.62.86,35.48,35.48,0,0,1-13,2.55c-0.7,0-1.4,0-2.07-.06,0-.33,0-0.66.07-1h0c0-.34.06-0.68,0.1-1a24.77,24.77,0,0,1,.62-3.37c0.06-.26.13-0.52,0.2-0.77h0l0.06-.21c0.1-.33.2-0.66,0.3-1h0.66a28,28,0,0,0,12.09-2.8,1,1,0,0,1,.92,0,1,1,0,0,1,.5.76A32.66,32.66,0,0,1,67.9,35Z"/><path class="cls-2" d="M36.26,27c-0.09.35-.2,0.7-0.3,1,0,0.11-.06.22-0.1,0.33s-0.15.45-.23,0.67a25.81,25.81,0,0,1-1.35,3.25c-0.15.3-.3,0.6-0.46,0.89a0.46,0.46,0,0,1,0,.1c-0.14.26-.29,0.52-0.44,0.77a35.78,35.78,0,0,1-15.17-29c0-.41,0-0.82,0-1.23a1.13,1.13,0,0,1,.6-1A35,35,0,0,1,24.48,1,1,1,0,0,1,25.71,2a25.78,25.78,0,0,0-.14,3A28.48,28.48,0,0,0,36.26,27Z"/><path class="cls-2" d="M21.65,46.2v0.1c0,0.34,0,.67,0,1a25,25,0,0,1-.39,3.88,4.87,4.87,0,0,1-.09.55c0,0.2-.08.41-0.13,0.61-0.08.39-.17,0.78-0.27,1.17A35.43,35.43,0,0,1,9,55.57a36.79,36.79,0,0,1-4.87-.3,1,1,0,0,1-.7-0.43,34.73,34.73,0,0,1-3.4-6.37,1,1,0,0,1,.18-1,1,1,0,0,1,1-.3,28.06,28.06,0,0,0,7.74,1,28.39,28.39,0,0,0,12.59-3c0,0.23,0,.47,0,0.7A2.42,2.42,0,0,1,21.65,46.2Z"/><path class="cls-2" d="M39.79,37.71A36.1,36.1,0,0,1,28.93,49.38c0-.16,0-0.33,0-0.49s0-.53,0-0.79c0-.41,0-0.83,0-1.25,0-.2,0-0.4,0-0.6,0-1.21-.09-2.43-0.21-3.65l-0.06-.53c0-.22-0.05-0.45-0.09-0.67q-0.08-.61-0.19-1.2a27.8,27.8,0,0,0,4.83-6.13l0.77,0.53,0.06,0c0.27,0.19.55,0.37,0.83,0.53a32.51,32.51,0,0,0,3,1.67q0.45,0.24.9,0.44l0.07,0Z"/><path class="cls-3" d="M42.83,30.94c-0.09.3-.19,0.6-0.29,0.89a0.14,0.14,0,0,0,0,.06c-0.12.31-.24,0.62-0.36,0.93a33.85,33.85,0,0,1-1.39,3.11c-0.16.3-.31,0.6-0.47,0.89,0,0,0,0,0,.08-0.15.27-.3,0.54-0.45,0.8l-0.85-.38-0.07,0q-0.45-.21-0.9-0.44a32.51,32.51,0,0,1-3-1.67c-0.28-.17-0.56-0.35-0.83-0.53l-0.06,0-0.77-.53c0.16-.25.31-0.51,0.44-0.77a0.46,0.46,0,0,0,0-.1c0.17-.29.32-0.59,0.46-0.89a25.81,25.81,0,0,0,1.35-3.25c0.08-.22.16-0.44,0.23-0.67s0.07-.22.1-0.33c0.11-.34.22-0.69,0.3-1,0.28,0.23.56,0.45,0.85,0.65l0.28,0.21c0.19,0.14.38,0.28,0.58,0.41a26.82,26.82,0,0,0,3,1.81l0.9,0.44,0.11,0Q42.42,30.78,42.83,30.94Z"/><path class="cls-3" d="M29.06,46.25c0,0.2,0,.4,0,0.6,0,0.42,0,.84,0,1.25,0,0.26,0,.53,0,0.79s0,0.33,0,.49l-0.4.27-0.67.42c-0.36.23-.72,0.44-1.08,0.65A35.17,35.17,0,0,1,23,52.64l-0.5.21-0.63.25c-0.38.15-.75,0.28-1.13,0.42,0.1-.39.19-0.78,0.27-1.17,0-.2.09-0.41,0.13-0.61a4.87,4.87,0,0,0,.09-0.55,25,25,0,0,0,.39-3.88c0-.34,0-0.67,0-1V46.2a2.42,2.42,0,0,0,0-.38c0-.23,0-0.47,0-0.7l0.56-.29,0.42-.23c0.33-.17.65-0.35,1-0.55a27.94,27.94,0,0,0,3.19-2.27l0.42-.34L27.62,41c0.3-.25.6-0.52,0.87-0.8q0.11,0.58.19,1.2c0,0.22.06,0.45,0.09,0.67l0.06,0.53C29,43.82,29.05,45,29.06,46.25Z"/><path class="cls-2" d="M44.61,19.55a35.71,35.71,0,0,1-1.79,11.39q-0.41-.16-0.81-0.35l-0.11,0L41,30.09a26.82,26.82,0,0,1-3-1.81c-0.2-.13-0.39-0.27-0.58-0.41l-0.28-.21c-0.29-.21-0.57-0.43-0.85-0.65a28,28,0,0,0,.94-7.42A28.43,28.43,0,0,0,30.66,1.66a1,1,0,0,1-.14-1A1,1,0,0,1,31.4,0a35.26,35.26,0,0,1,7.17.46,1,1,0,0,1,.68.47A35.64,35.64,0,0,1,44.61,19.55Z"/><path class="cls-2" d="M28.93,49.38A35.5,35.5,0,0,1,21.87,68a1,1,0,0,1-.79.4,1,1,0,0,1-.34-0.06,33.28,33.28,0,0,1-5.23-2.39A1,1,0,0,1,15,65.25a1,1,0,0,1,.2-0.81,28.39,28.39,0,0,0,5.52-10.91c0.38-.13.75-0.26,1.13-0.42l0.63-.25,0.5-.21a35.17,35.17,0,0,0,3.78-1.91c0.36-.2.72-0.41,1.08-0.65l0.67-.42Z"/><path class="cls-2" d="M28.5,40.21c-0.28.27-.58,0.54-0.87,0.8l-0.49.43-0.42.34A27.94,27.94,0,0,1,23.53,44c-0.32.19-.64,0.37-1,0.55l-0.42.23-0.56.29A28.46,28.46,0,0,0,2.4,19.64a1,1,0,0,1-.6-0.59,1,1,0,0,1,.05-0.85A33.44,33.44,0,0,1,5,13.42a1,1,0,0,1,1.14-.31A35.74,35.74,0,0,1,28.5,40.21Z"/><path class="cls-2" d="M47.73,56.44A28.49,28.49,0,0,0,35.87,69.72a1,1,0,0,1-.85.61c-0.69,0-1.39.07-2.11,0.07a35.86,35.86,0,0,1-3.85-.18,1,1,0,0,1-.74-0.47,1,1,0,0,1-.1-0.87A36.28,36.28,0,0,1,45.41,49.25c0.05,0.25.1,0.51,0.16,0.76l0.06,0.25c0.08,0.34.16,0.68,0.26,1A30.66,30.66,0,0,0,47,54.58c0.1,0.28.2,0.55,0.32,0.82l0.05,0.12Q47.51,56,47.73,56.44Z"/><path class="cls-2" d="M66,46.66a34.23,34.23,0,0,1-2.41,5.47,1,1,0,0,1-.94.52c-0.3,0-.6,0-0.91,0a28.29,28.29,0,0,0-7.15,1c-0.14-.31-0.27-0.62-0.4-0.94a0.35,0.35,0,0,1,0-.09C54,52.28,53.91,52,53.82,51.72a26.78,26.78,0,0,1-1-3.27c-0.07-.3-0.13-0.59-0.2-0.89a0.22,0.22,0,0,1,0-.08c-0.07-.33-0.13-0.67-0.18-1a35.75,35.75,0,0,1,9.22-1.27c1.17,0,2.32,0,3.45.14a1,1,0,0,1,.74.45A1,1,0,0,1,66,46.66Z"/><path class="cls-3" d="M54.57,53.59c-0.33.08-.65,0.17-1,0.28l-0.1,0-0.86.29a24.93,24.93,0,0,0-3.15,1.31l-0.81.42L48.59,56q-0.43.23-.87,0.49-0.21-.46-0.4-0.93l-0.05-.12c-0.11-.27-0.21-0.54-0.32-0.82a30.66,30.66,0,0,1-1.07-3.31c-0.09-.33-0.17-0.67-0.26-1L45.57,50c-0.06-.25-0.11-0.51-0.16-0.76,0.23-.13.46-0.25,0.7-0.36l0.23-.11,0.94-.44a31.26,31.26,0,0,1,3.25-1.26q0.42-.15.84-0.28l0.12,0,1-.29c0,0.33.1,0.67,0.18,1a0.22,0.22,0,0,0,0,.08c0.06,0.3.12,0.59,0.2,0.89a26.78,26.78,0,0,0,1,3.27c0.09,0.28.2,0.56,0.32,0.84a0.35,0.35,0,0,0,0,.09C54.29,53,54.43,53.28,54.57,53.59Z"/><path class="cls-2" d="M57.53,60.14a33.6,33.6,0,0,1-4.26,3.62,1,1,0,0,1-.58.18,1,1,0,0,1-.8-0.39,35.87,35.87,0,0,1-4.17-7.1q0.43-.26.87-0.49l0.09-.05,0.81-.42a24.93,24.93,0,0,1,3.15-1.31l0.86-.29,0.1,0c0.32-.1.64-0.19,1-0.28a27.37,27.37,0,0,0,3.06,5.25A1,1,0,0,1,57.53,60.14Z"/><path class="cls-3" d="M53.48,33.22c-0.11.33-.21,0.66-0.3,1l-0.06.21h0c-0.08.25-.15,0.51-0.2,0.77a24.77,24.77,0,0,0-.62,3.37c0,0.33-.08.67-0.1,1h0c0,0.32-.06.65-0.07,1-0.34,0-.67,0-1-0.06h0l-1-.09a32.89,32.89,0,0,1-3.4-.52l-1-.22-0.16,0-0.82-.2c0-.28,0-0.56.06-0.85,0-.06,0-0.11,0-0.17,0-.33.08-0.67,0.12-1,0.14-1.12.35-2.24,0.6-3.36,0.07-.32.15-0.63,0.22-1v0q0.12-.48.26-1c0.32,0.1.63,0.19,1,.26h0c0.32,0.09.65,0.16,1,.22a26,26,0,0,0,3.41.5l0.78,0.06,0.24,0Z"/><path class="cls-2" d="M52.45,46.48l-1,.29-0.12,0q-0.42.12-.84,0.28a31.26,31.26,0,0,0-3.25,1.26l-0.94.44-0.23.11c-0.24.11-.47,0.23-0.7,0.36a36.8,36.8,0,0,1-.74-7c0-.93,0-1.85.09-2.79l0.82,0.2,0.16,0,1,0.22a32.89,32.89,0,0,0,3.4.52l1,0.09h0c0.33,0,.66.06,1,0.06,0,0.52,0,1.06,0,1.6A27,27,0,0,0,52.45,46.48Z"/><path class="cls-2" d="M63.24,19.45a28.58,28.58,0,0,0-9.76,13.77l-1,0-0.24,0-0.78-.06A26,26,0,0,1,48,32.6c-0.33-.07-0.66-0.14-1-0.22h0c-0.32-.08-0.63-0.17-1-0.26A36,36,0,0,1,59,13.35a1,1,0,0,1,1.38.18,34.94,34.94,0,0,1,3.09,4.64A1,1,0,0,1,63.24,19.45Z"/></svg>
-		<ul>
-			<li>
-				<a href="#">Features</a>
-			</li>
-			<li>
-				<a href="#">Use Cases</a>
-			</li>
-			<li>
-				<a href="#">About</a>
-			</li>
-			<li>
-				<a href="##">Pricing</a>
-			</li>
-			<li>
-				<a href="#">Login</a>
-			</li>
-		</ul>
-	</nav>	
-	<div id="hero">
-		<div id="pre">
-			<h1>Turn knowledge into data</h1>
-			<p>Indaba puts your network of experts at your fingertips and lets you convert their expertise into a data set for publication, analytics, or data driven decision making.</p>
-			<br>
-			<br>
-			<br>
-			<a href="#">Get your data with Indaba</a>
-		</div>
-		<div id="post">
-			<h1>What is Indaba?</h1>
-			<p>Wrestling with new, big questions often starts with an overwhelming volume of information. Different people understand different aspects of the issue—but there’s never been an easy way to bring what they know together. What if you could discipline that information noise into a signal and extract what you really need to know? With Indaba, you can.</p>
-		</div>
-		<div id="shade"></div>
-	</div>
-	<div id="heroBackground">
-		<video autoplay loop poster="./assets/video/ffc-space.jpg" id="heroBG">
-			<source src="./assets/video/ffc-space.webm" type="video/webm">
-			<source src="./assets/video/ffc-space.mp4" type="video/mp4">
-		</video>
-	</div>
-	<div id="contentContainer">
-		<div id="pageContents">
-			<div class="withPreview">
-				<img src="./assets/img/home/screenshot_survey.png">
-				<span>
-				<h1>Indaba is more than a survey<br><br></h1>
-				<p>The problem with surveys is they are one time and one way – they preclude the value of discussion among diverse expertise.  Indaba restores a virtual meeting table so users can discuss their responses, upload evidence, include links to on line resources, or interact with the program director.</p>
-				</span>
-				
-			</div>
-			<div class="withPreview">
-				<img src="./assets/img/home/screenshot_collab.png">
-				<span>
-				<h1>Indaba is more than a collaborative workspace</h1>
-				<p>The problem with most discussion tools is that they don’t discipline the result into data for meaningful comparisons or evidence based decision making.  Indaba helps you set the rules for quantifying experts’ assessments, establish a workflow and timeline, and keep the project moving toward a useable, publishable data-set.</p>
-				</span>
-			</div>
-			<div>
-				<p>You and your network know things about the world.  Indaba makes that knowledge matter more because it makes that knowledge useable.  Indaba turns knowledge into data.</p>
-				<a href="#">View all of Indaba’s features</a>
-			</div>
-			<div>
-				<h1>What can Indaba do?</h1>
-				<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-				<ol>
-					<li>
-						<h2>Case study #1</h2>
-						<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-					</li>
-					<li>
-						<h2>Case study #2</h2>
-						<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-					</li>
-					<li>
-						<h2>Case study #3</h2>
-						<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-					</li>
-				</ol>
-				<a href="#">Read more</a>
-			</div>
-			<div>
-				<h1>Pricing</h1>
-				<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-				<a href="#">See pricing details</a>
-			</div>
-			<div>
-				<h1>About Indaba</h1>
-				<p>In sem libero, varius id faucibus sit amet, pellentesque et nibh. Maecenas mollis mollis tristique. In hac habitasse platea dictumst. Vivamus id fringilla massa, sed mollis est.</p>
-				<a href="#">Read more</a>
-			</div>
-		</div>
-		<div>
-			<h1>We’d love to talk about what Indaba can do for you</h1>
-			<p>Send us an email at <a href="#">hello@amida-tech.com</a> or reach us by phone at <a href="#">(202) 753-1790</a></p>
-		</div>
-		<div>
-		<ul>
-			<li>
-				<a href="#">Features</a>
-			</li>
-			<li>
-				<a href="#">Use Cases</a>
-			</li>
-			<li>
-				<a href="#">About</a>
-			</li>
-			<li>
-				<a href="##">Pricing</a>
-			</li>
-			<li>
-				<a href="#">Twitter</a>
-			</li>
-			<li>
-				<a href="#">Support</a>
-			</li>
-			<li>
-				<a href="#">Knowledge Base</a>
-			</li>
-			<li>
-				<a href="#">Login</a>
-			</li>
-		</ul>
-		<span>&copy; Amida Technology Solutions<br>Video courtesy of Crew of Expedition 42, the <a href="http://eol.jsc.nasa.gov/">Earth Science and Remote Sensing Unit</a>, NASA Johnson Space Center</span>
 
-	</div>
-	</div>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Use Cases</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<div class="wrapper">
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                
+                <div class="intro-heading">Turn knowledge into data</div>
+                <div class="intro-lead-in">Indaba puts your network at your fingertips and lets you convert their expertise into a data set for analysis, publication, or data-driven decision making.</div>
+                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content_wrapper">
+
+    <!-- Features  Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What is Indaba?</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>Tackling big, new questions often begins with an overwhelming volume of information. Different people understand different aspects of the issue—but there’s never been an easy way to bring together all that they know in one  place. What if you could structure that informational noise into a coherent data signal and extract what you really need to know?  With Indaba, you can. </p>
+                </div>
+            </div>
+            <div class="row about1 margin-top-50">
+                <div class="col-md-6 col-sm-7">
+                    <h3>Indaba is more than a survey</h3>
+                    <p>The problem with surveys is they are one time and one way – they preclude discussion and iterative review among diverse actors. Indaba combines surveys with a virtual meeting table so users can discuss their responses, provide evidence, or interact with program leadership.</p>
+                </div>
+            </div>
+            <div class="row about2 margin-top-50">
+                <div class="col-md-6 col-sm-7 col-md-offset-6 col-sm-offset-5">
+                    <h3>Indaba is more than a collaborative workspace</h3>
+                    <p>The problem with most discussion tools is that they don’t generate a data product for meaningful comparisons or evidence-based decision making.  Indaba helps you set the rules for quantifying experts’ assessments, establish a workflow and timeline, work towards a consensus, and keep the project moving tracking against a deadline. The result: a useable, publishable dataset.</p>
+                </div>
+            </div>
+
+            <div class="row text-center margin-top-50">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>You and your network know things about the world.  Indaba makes that knowledge matter   because it makes that knowledge useable.  Indaba turns knowledge into data.</p>
+                    <p><a href="" class="btn btn-xl">View all of Indaba’s features</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What can Indaba do?</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>Indaba is a data collaboration platform that is purpose-built to assemble distributed knowledge about hard-to-measure concepts and turn it into structured datasets, indices, and scorecards.</p>
+                </div>
+            </div>
+            <div class="row text-center service_cases">
+                <div class="col-md-4 service_case">
+                    <h4 class="service-heading">Case Study #1</h4>
+                    <p class="text-muted">Harness the power of your global network to create and publish indices that quantify complex concepts like good governance, transparency, freedom, health, or safety. </p>
+                </div>
+                <div class="col-md-4 service_case">
+                    <h4 class="service-heading">Case Study #2</h4>
+                    <p class="text-muted">Convert staff assessment of effectiveness, quality, or change to drive monitoring and evaluation of community development, institutional strengthening, or conflict resolution efforts.  </p>
+                </div>
+                <div class="col-md-4 service_case">
+                    <h4 class="service-heading">Case Study #3</h4>
+                    <p class="text-muted">Leverage existing but distributed knowledge to power data-driven decision making about resource allocation, from corporate spending to security assistance. </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p><a href="" class="btn btn-xl">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Pricing</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>Stop paying a per-user fee to access your network. Indaba offer a flat-fee monthly subscription service to smaller organizations, and enterprise deployments for larger ones.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p><a href="" class="btn btn-xl">See pricing details</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Indaba Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Indaba</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>Indaba was originally developed by – and for – a community of transparency oriented NGOs.  Amida brought Indaba to market in 2015 to support a broader array of hard-to-measure sectors.    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p><a href="" class="btn btn-xl">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 
-<script type="text/javascript">
-  /* play video twice as fast */
-  document.getElementById("heroBG").defaultPlaybackRate = 0.2;
-  document.getElementById("heroBG").play();
-</script>
+    </div>
+
+<!--  Content wrapper -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014</li>
+                                <li>Client: Round Icons</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Heading</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
 </body>
+
+</html>
