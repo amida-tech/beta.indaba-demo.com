@@ -70,8 +70,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #61a839;
+  border-color: #61a839;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -194,7 +194,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #61a839;
 }
 
 .navbar-brand{ padding:0; }
@@ -727,6 +727,10 @@ body {
 .content_wrapper{ background:#fff; }
 
 section .container, header .container{ width:100%; }
+
+p {
+    margin: 0 0 20px;
+}
 
 .margin-top-50{ margin-top:50px; }
 .about1{ background:url('../img/about/pic1.png') left no-repeat;min-height:535px;box-sizing:border-box }
