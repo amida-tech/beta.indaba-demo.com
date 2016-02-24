@@ -4,9 +4,30 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+@font-face {
+  font-family: 'ManifoldBold';
+
+  src: url('../fonts/ManifoldCF-Bold.eot');
+  src: url('../fonts/ManifoldCF-Bold.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/ManifoldCF-Bold.woff2') format('woff2'), 
+        url('../fonts/ManifoldCF-Bold.woff') format('woff'), 
+        url('../fonts/ManifoldCF-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ManifoldRegular';
+
+  src: url('../fonts/ManifoldCF-Regular.eot');
+  src: url('../fonts/ManifoldCF-Regular.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/ManifoldCF-Regular.woff2') format('woff2'), 
+        url('../fonts/ManifoldCF-Regular.woff') format('woff'), 
+        url('../fonts/ManifoldCF-Regular.ttf') format('truetype');
+}
+
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size:16px;
   background:url('../img/background.png') top center no-repeat #1c1a2a;
   background-size:contain;
 }
@@ -17,11 +38,11 @@ body {
   color: #7abc55;
 }
 p {
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.5;
 }
 p.large {
-  font-size: 16px;
+  font-size: 18px;
 }
 a,
 a:hover,
@@ -37,7 +58,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #7abc55;
+  color: #888;
+  text-decoration:none;
 }
 h1,
 h2,
@@ -45,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "ManifoldBold", Helvetica, Arial, sans-serif;
 }
 .img-centered {
   margin: 0 auto;
@@ -60,9 +82,8 @@ h6 {
   color: #ffffff;
   background-color: #7abc55;
   border-color: #7abc55;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "ManifoldBold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -104,11 +125,11 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
   background-color: #7abc55;
   border-color: #7abc55;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  font-size: 24px;
   font-weight: 700;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 40px;
+  padding: 16px 30px;
   display:inline-block;
 }
 .btn-xl:hover,
@@ -153,7 +174,6 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-brand {
   color: #7abc55;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -176,20 +196,20 @@ fieldset[disabled] .btn-xl.active {
   background-color: #1c1a2a;
 }
 .navbar-default .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "ManifoldRegular", Helvetica, Arial, sans-serif;
+  font-size:18px;
   letter-spacing: 1px;
   color: white;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-  color: #7abc55;
+  color: #888;
   outline: none;
 }
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: #7abc55;
+  color: #ccc;
+  background-color:transparent;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -229,6 +249,7 @@ fieldset[disabled] .btn-xl.active {
 header {
   text-align: center;
   color: white;
+  min-height:375px;
 }
 header .intro-text {
   padding-top: 100px;
@@ -237,30 +258,30 @@ header .intro-text {
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 140%;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "ManifoldBold", Helvetica, Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 150px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 26px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 40px;
+    font-family: font-family: "ManifoldBold", Helvetica, Arial, sans-serif;
+    font-size: 45px;
     line-height: 75px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 section {
@@ -268,7 +289,7 @@ section {
   border-bottom:1px solid #666;
 }
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 36px;
   margin-top: 0;
   margin-bottom: 15px;
   color:#1b9249;
@@ -592,42 +613,9 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+  color:#eaeaea;
 }
-footer span.copyright {
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-transform: none;
-}
-footer ul.quicklinks {
-  margin-bottom: 0;
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-transform: none;
-}
-ul.social-buttons {
-  margin-bottom: 0;
-}
-ul.social-buttons li a {
-  display: block;
-  background-color: #222222;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
-  color: white;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #7abc55;
-}
+
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -726,25 +714,59 @@ body {
 .wrapper{ max-width:1034px;margin:auto; }
 .content_wrapper{ background:#fff; }
 
-section .container, header .container{ width:100%; }
+section .container, header .container, footer .container{ width:100%; }
 
 p {
     margin: 0 0 20px;
 }
 
+.green{ color: #7abc55 !important; }
+
 .margin-top-50{ margin-top:50px; }
-.about1{ background:url('../img/about/pic1.png') left no-repeat;min-height:535px;box-sizing:border-box }
-  .about1>div{ padding:165px 75px 0; }
-.about2{ background:url('../img/about/pic2.png') right no-repeat;min-height:535px;box-sizing:border-box }
-  .about2>div{ padding:165px 75px 0; }
+.float_right{ float:right; }
+
+.about1, .about2{ min-height:535px; }
+.about1>div, .about2>div{ padding:145px 75px 0; }
+
+.feature{ min-height:568px; }
+.feature>div{ padding:80px 75px 0; }
+
+.usecase{ min-height:350px; }
+.usecase>div{ padding:0px 75px 0; }
+.usecase img{ max-width:100%;margin:100px auto 0; }
+
+
+.about1{ background:url('../img/about/pic1.png') left no-repeat; }
+.about2{ background:url('../img/about/pic2.png') right no-repeat; }
+
+.feature1{ background:url('../img/feature1.png') left no-repeat; }
+.feature2{ background:url('../img/feature2.png') right no-repeat; }
+.feature3{ background:url('../img/feature3.png') left no-repeat; }
+.feature4{ background:url('../img/feature4.png') right no-repeat; }
+
+.usecase1{ background:url('../img/usecase1.png') left no-repeat; }
+.usecase2{ background:url('../img/usecase3.png') right no-repeat; }
+
+  
 
 @media(max-width:768px){
-  .about1{ background-image:url('../img/about/pic1-768.png'); }
-  .about2{ background-image:url('../img/about/pic2-768.png'); }
+  .about1, .feature1, .feature3{ background-image:url('../img/about/pic1-768.png'); }
+  .about2, .feature2, .feature4{ background-image:url('../img/about/pic2-768.png'); }
+
+  .about1, .about2, .feature{ min-height:375px;margin-top:0; }
+  .about1>div, .about2>div{ padding:95px 45px 0; }
+  .feature>div{ padding:45px 45px 0; }
+  .usecase>div{ padding:0px 45px 0; }
+  
+}
+
+@media(max-width:992px){
+  .usecase img{ margin:0px auto 0; }
 }
 
 
 #services{ background:url('../img/services-back.png') center 70px no-repeat; }
+#quick_features { background:url('../img/features-back.png') center center no-repeat; }
 
 .service_cases{ width:90%;margin:50px auto; }
   .service_case{ border:1px solid #1c1a2a;border-radius:4px;box-shadow:0 1px 1px #ccc;padding:0;text-align:left;
@@ -755,3 +777,14 @@ p {
 @media (min-width: 992px){
   .service_case{ width:31%;margin:0 1.15%; }
 }
+
+@media (max-width:992px){
+  .service_case{ margin-bottom:20px; }
+}
+
+.basic_features>div{ padding-top:20px;font-size:18px; }
+
+
+.footer_text{ font-size:24px;padding-top:20px; }
+.footer_menu{ padding:60px 0; }
+  .footer_menu a{ margin:0 10px;color:#fff; }
