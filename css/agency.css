@@ -806,19 +806,26 @@ p {
 
 #services{ background:url('../img/services-back.png') center 70px no-repeat; }
 #quick_features { background:url('../img/features-back.png') center center no-repeat; }
+#price_section{ background:url('../img/pricing-back.png') center 70px no-repeat; }
 
-.service_cases{ width:90%;margin:50px auto; }
-  .service_case{ border:1px solid #1c1a2a;border-radius:4px;box-shadow:0 1px 1px #ccc;padding:0;text-align:left;
-        min-height:310px; }
-    .service_case .text-muted{ padding:25px 35px;margin:0; }
-  .service-heading { background:#1c1a2a;padding:15px 35px;color:#fff;margin:0; }
+.service_items{ width:90%;margin:50px auto; }
+.price_items{ width:90%;margin:20px auto; }
+  .service_item, .price_item{ border:1px solid #1c1a2a;border-radius:4px;box-shadow:0 1px 1px #ccc;padding:0;text-align:left;
+            background:#fff; }
+  .service_item{ min-height:315px; }
+  .price_item{ min-height:270px; }
+    .service_item .text-muted, .price_item .text-muted{ padding:25px 35px;margin:0; }
+  .item-heading { background:#1c1a2a;padding:15px 35px;color:#fff;margin:0;line-height:140%;
+                    font-family: "ManifoldRegular", Helvetica, Arial, sans-serif; }
+      .item-heading span{ font-size:24px; }
 
 @media (min-width: 992px){
-  .service_case{ width:31%;margin:0 1.15%; }
+  .service_item{ width:31%;margin:0 1.15%; }
+  .price_item{ width:47.5%;margin:0 1.25%; }
 }
 
 @media (max-width:992px){
-  .service_case{ margin-bottom:20px; }
+  .service_item, .price_item{ margin-bottom:20px; }
 }
 
 .basic_features>div{ padding-top:20px;font-size:18px; }
