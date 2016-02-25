@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size:16px;
-  background:url('../img/background.png') top center no-repeat #1c1a2a;
+  background:#1c1a2a;
   background-size:contain;
 }
 .text-muted {
@@ -168,6 +168,15 @@ fieldset[disabled] .btn-xl.active {
   color: #7abc55;
   background-color: #ffffff;
 }
+
+@media(max-width:768px){
+  .btn-xl {
+  border-radius: 5px;
+  font-size: 21px;
+  padding: 16px 20px;
+}
+}
+
 .navbar-default {
   background-color: #1c1a2a;
   border-color: transparent;
@@ -256,7 +265,7 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 22px;
   line-height: 140%;
   margin-bottom: 25px;
@@ -356,7 +365,7 @@ section h3 {
   margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
@@ -641,7 +650,7 @@ footer {
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
 }
@@ -711,6 +720,26 @@ body {
 
 
 
+.video_back{ 
+    background:url('../img/background.jpg') top center no-repeat #1c1a2a;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -2; }
+
+.shade {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(28, 26, 42, 0) 0%, rgba(28, 26, 42, 0) 75%, rgba(28, 26, 42, 1) 100%) repeat scroll 0 0;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
 .wrapper{ max-width:1034px;margin:auto; }
 .content_wrapper{ background:#fff; }
 
@@ -770,7 +799,7 @@ p {
 
 .service_cases{ width:90%;margin:50px auto; }
   .service_case{ border:1px solid #1c1a2a;border-radius:4px;box-shadow:0 1px 1px #ccc;padding:0;text-align:left;
-        min-height:275px; }
+        min-height:310px; }
     .service_case .text-muted{ padding:25px 35px;margin:0; }
   .service-heading { background:#1c1a2a;padding:15px 35px;color:#fff;margin:0; }
 
